@@ -1,0 +1,2 @@
+[console_scripts]
+python-dpi = DPI2.main:main

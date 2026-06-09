@@ -1,0 +1,2 @@
+## Python dependencies for the Python DPI rewrite
+# No external packages required for the initial implementation.

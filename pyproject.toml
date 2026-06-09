@@ -1,0 +1,27 @@
+[project]
+name = "DPI2"
+version = "0.1.0"
+description = "Python rewrite of the DPI PCAP processing engine"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "DPI Project" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[project.scripts]
+python-dpi = "DPI2.main:main"
+
+[tool.setuptools]
+packages = ["DPI2"]
+
+[tool.setuptools.package-dir]
+"DPI2" = "."
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
