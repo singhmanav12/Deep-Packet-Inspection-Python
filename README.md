@@ -1,6 +1,4 @@
-# Python DPI Rewrite
-
-This folder contains a Python rewrite of the original C++ DPI packet inspection project.
+## Goals
 
 The goal is to provide a readable, extendable Python implementation that:
 - reads PCAP packet captures
