@@ -7,26 +7,6 @@ The goal is to provide a readable, extendable Python implementation that:
 - applies rule-based blocking for IP, domain, port, and application type
 - writes filtered packets back to a new PCAP file
 
-## 1. What is DPI?
-
-**Deep Packet Inspection (DPI)** is a technology used to examine the contents of network packets as they pass through a checkpoint. Unlike simple firewalls that only look at packet headers (source/destination IP), DPI looks *inside* the packet payload.
-
-### Real-World Uses:
-- **ISPs**: Throttle or block certain applications (e.g., BitTorrent)
-- **Enterprises**: Block social media on office networks
-- **Parental Controls**: Block inappropriate websites
-- **Security**: Detect malware or intrusion attempts
-
-### What Our DPI Engine Does:
-```
-User Traffic (PCAP) → [DPI Engine] → Filtered Traffic (PCAP)
-                           ↓
-                    - Identifies apps (YouTube, Facebook, etc.)
-                    - Blocks based on rules
-                    - Generates reports
-```
-
----
 
 ## Project structure
 
@@ -121,6 +101,28 @@ After processing, it prints a summary report including:
 - add rule loading from config files
 - support more application classification rules
 - add unit tests for parser and extractor functions
+
+## 1. What is DPI?
+
+**Deep Packet Inspection (DPI)** is a technology used to examine the contents of network packets as they pass through a checkpoint. Unlike simple firewalls that only look at packet headers (source/destination IP), DPI looks *inside* the packet payload.
+
+### Real-World Uses:
+- **ISPs**: Throttle or block certain applications (e.g., BitTorrent)
+- **Enterprises**: Block social media on office networks
+- **Parental Controls**: Block inappropriate websites
+- **Security**: Detect malware or intrusion attempts
+
+### What Our DPI Engine Does:
+```
+User Traffic (PCAP) → [DPI Engine] → Filtered Traffic (PCAP)
+                           ↓
+                    - Identifies apps (YouTube, Facebook, etc.)
+                    - Blocks based on rules
+                    - Generates reports
+```
+
+---
+
 ## 2. Networking Background
 
 ### The Network Stack (Layers)
