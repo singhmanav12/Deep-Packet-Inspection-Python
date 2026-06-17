@@ -102,6 +102,25 @@ After processing, it prints a summary report including:
 - support more application classification rules
 - add unit tests for parser and extractor functions
 
+
+---
+
+## Table of Contents
+
+1. [What is DPI?](#1-what-is-dpi)
+2. [Networking Background](#2-networking-background)
+3. [Project Overview](#3-project-overview)
+4. [File Structure](#4-file-structure)
+5. [The Journey of a Packet (Simple Version)](#5-the-journey-of-a-packet-simple-version)
+6. [The Journey of a Packet (Multi-threaded Version)](#6-the-journey-of-a-packet-multi-threaded-version)
+7. [Deep Dive: Each Component](#7-deep-dive-each-component)
+8. [How SNI Extraction Works](#8-how-sni-extraction-works)
+9. [How Blocking Works](#9-how-blocking-works)
+10. [Building and Running](#10-building-and-running)
+11. [Understanding the Output](#11-understanding-the-output)
+
+---
+
 ## 1. What is DPI?
 
 **Deep Packet Inspection (DPI)** is a technology used to examine the contents of network packets as they pass through a checkpoint. Unlike simple firewalls that only look at packet headers (source/destination IP), DPI looks *inside* the packet payload.
